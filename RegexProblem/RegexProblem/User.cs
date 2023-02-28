@@ -58,5 +58,15 @@ namespace RegexProblem
                 Console.WriteLine($"'{password}' does not match the pattern");
             Console.WriteLine();
         }
+        public void ValidatePasswordRule2(string password)
+        {
+            Console.WriteLine(">>>Matching  Password 2: ");
+            var regex = "^(?=.*[A-Z]).{8,}$";
+            if (Regex.IsMatch(password, regex))
+                Console.WriteLine($"{password} is correct input");
+            else
+                Console.WriteLine($"'{password}' does not match the pattern");
+            Console.WriteLine();
+        }
     }
 }
