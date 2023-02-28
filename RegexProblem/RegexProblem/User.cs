@@ -38,5 +38,15 @@ namespace RegexProblem
                 Console.WriteLine($"'{email}' does not match the pattern");
             Console.WriteLine();
         }
+        public void ValidatePhoneNumber(string number)
+        {
+            Console.WriteLine(">>>Matching  Number: ");
+            var regex = @"^[0-9]{1,2}\s[0-9]{10}$";
+            if (Regex.IsMatch(number, regex))
+                Console.WriteLine($"{number} is correct input");
+            else
+                Console.WriteLine($"'{number}' does not match the pattern");
+            Console.WriteLine();
+        }
     }
 }
