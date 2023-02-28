@@ -10,6 +10,7 @@ namespace RegexProblem
             User user = new User();
             user.ValidateFirstName("Rohan");
             user.ValidateLastName("Shewale");
+            user.ValidateEmail("shewalerohan50@gmail.com");
 
             Console.ReadKey();
         }

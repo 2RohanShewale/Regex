@@ -28,5 +28,15 @@ namespace RegexProblem
                 Console.WriteLine($"'{lastName}' does not match the pattern");
             Console.WriteLine();
         }
+        public void ValidateEmail(string email)
+        {
+            Console.WriteLine(">>>Matching  Email: ");
+            var regex = "^[a-zA-Z]{3,}[.+-_]{0,1}[0-9]{0,}[@][a-zA-Z]+[.][a-z]{2,3}([.][a-z]{2}){0,1}$";
+            if (Regex.IsMatch(email, regex))
+                Console.WriteLine($"{email} is correct input");
+            else
+                Console.WriteLine($"'{email}' does not match the pattern");
+            Console.WriteLine();
+        }
     }
 }
