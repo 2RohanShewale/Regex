@@ -12,6 +12,7 @@ namespace RegexProblem
             user.ValidateLastName("Shewale");
             user.ValidateEmail("shewalerohan50@gmail.com");
             user.ValidatePhoneNumber("91 0123456789");
+            user.ValidatePasswordRule1("1234567898");
 
             Console.ReadKey();
         }
