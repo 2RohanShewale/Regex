@@ -15,6 +15,7 @@ namespace RegexProblem
             user.ValidatePasswordRule1("1234567898");
             user.ValidatePasswordRule2("123456670A");
             user.ValidatePasswordRule3("abcdefg4C");
+            user.ValidatePasswordRule4("avcd&sfd4C");
 
             Console.ReadKey();
         }
