@@ -14,6 +14,7 @@ namespace RegexProblem
             user.ValidatePhoneNumber("91 0123456789");
             user.ValidatePasswordRule1("1234567898");
             user.ValidatePasswordRule2("123456670A");
+            user.ValidatePasswordRule3("abcdefg4C");
 
             Console.ReadKey();
         }
