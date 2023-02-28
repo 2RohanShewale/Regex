@@ -9,6 +9,7 @@ namespace RegexProblem
             Console.WriteLine("*-----REGEX-----*");
             User user = new User();
             user.ValidateFirstName("Rohan");
+            user.ValidateLastName("Shewale");
 
             Console.ReadKey();
         }

@@ -18,5 +18,15 @@ namespace RegexProblem
                 Console.WriteLine($"'{firstName}' does not match the pattern");
             Console.WriteLine();
         }
+        public void ValidateLastName(string lastName)
+        {
+            Console.WriteLine(">>>Matching Last Name: ");
+            var regex = "^[A-Z][a-z]{2,}$";
+            if (Regex.IsMatch(lastName, regex))
+                Console.WriteLine($"{lastName} is correct input");
+            else
+                Console.WriteLine($"'{lastName}' does not match the pattern");
+            Console.WriteLine();
+        }
     }
 }
