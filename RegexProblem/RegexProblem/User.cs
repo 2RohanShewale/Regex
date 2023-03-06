@@ -24,7 +24,7 @@ namespace RegexProblem
             else
             {
                 Console.WriteLine($"'{firstName}' does not match the pattern");
-                return "First Name is Invalid";
+                return "Firstt Name is Invalid";
             }
 
         }
